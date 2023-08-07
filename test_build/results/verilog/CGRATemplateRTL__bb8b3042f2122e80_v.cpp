@@ -1,12 +1,12 @@
 //========================================================================
-// VCGRATemplateRTL__009dc38f16b51b37_v.cpp
+// VCGRATemplateRTL__bb8b3042f2122e80_v.cpp
 //========================================================================
 // This file provides a template for the C wrapper used in the import
 // pass. The wrapper exposes a C interface to CFFI so that a
 // Verilator-generated C++ model can be driven from Python.
 // This templated is based on PyMTL v2.
 
-#include "obj_dir_CGRATemplateRTL__009dc38f16b51b37/VCGRATemplateRTL__009dc38f16b51b37.h"
+#include "obj_dir_CGRATemplateRTL__bb8b3042f2122e80/VCGRATemplateRTL__bb8b3042f2122e80.h"
 #include "stdio.h"
 #include "stdint.h"
 #include "verilated.h"
@@ -19,7 +19,7 @@
 #define VLINETRACE 0
 
 #if VLINETRACE
-#include "obj_dir_CGRATemplateRTL__009dc38f16b51b37/VCGRATemplateRTL__009dc38f16b51b37__Syms.h"
+#include "obj_dir_CGRATemplateRTL__bb8b3042f2122e80/VCGRATemplateRTL__bb8b3042f2122e80__Syms.h"
 #include "svdpi.h"
 #endif
 
@@ -54,16 +54,16 @@ extern "C" {
     unsigned char prev_clk;
     #endif
 
-  } VCGRATemplateRTL__009dc38f16b51b37_t;
+  } VCGRATemplateRTL__bb8b3042f2122e80_t;
 
   // Exposed methods
-  VCGRATemplateRTL__009dc38f16b51b37_t * create_model( const char * );
-  void destroy_model( VCGRATemplateRTL__009dc38f16b51b37_t *);
-  void eval( VCGRATemplateRTL__009dc38f16b51b37_t * );
+  VCGRATemplateRTL__bb8b3042f2122e80_t * create_model( const char * );
+  void destroy_model( VCGRATemplateRTL__bb8b3042f2122e80_t *);
+  void eval( VCGRATemplateRTL__bb8b3042f2122e80_t * );
   void assert_en( bool en );
 
   #if VLINETRACE
-  void trace( VCGRATemplateRTL__009dc38f16b51b37_t *, char * );
+  void trace( VCGRATemplateRTL__bb8b3042f2122e80_t *, char * );
   #endif
 
 }
@@ -90,15 +90,15 @@ double sc_time_stamp()
 // Construct a new verilator simulation, initialize interface signals
 // exposed via CFFI, and setup VCD tracing if enabled.
 
-VCGRATemplateRTL__009dc38f16b51b37_t * create_model( const char *vcd_filename ) {
+VCGRATemplateRTL__bb8b3042f2122e80_t * create_model( const char *vcd_filename ) {
 
-  VCGRATemplateRTL__009dc38f16b51b37_t * m;
-  VCGRATemplateRTL__009dc38f16b51b37   * model;
+  VCGRATemplateRTL__bb8b3042f2122e80_t * m;
+  VCGRATemplateRTL__bb8b3042f2122e80   * model;
 
   Verilated::randReset( 0 );
 
-  m     = (VCGRATemplateRTL__009dc38f16b51b37_t *) malloc( sizeof(VCGRATemplateRTL__009dc38f16b51b37_t) );
-  model = new VCGRATemplateRTL__009dc38f16b51b37();
+  m     = (VCGRATemplateRTL__bb8b3042f2122e80_t *) malloc( sizeof(VCGRATemplateRTL__bb8b3042f2122e80_t) );
+  model = new VCGRATemplateRTL__bb8b3042f2122e80();
 
   m->model = (void *) model;
 
@@ -159,13 +159,13 @@ VCGRATemplateRTL__009dc38f16b51b37_t * create_model( const char *vcd_filename ) 
 //------------------------------------------------------------------------
 // Finalize the Verilator simulation, close files, call destructors.
 
-void destroy_model( VCGRATemplateRTL__009dc38f16b51b37_t * m ) {
+void destroy_model( VCGRATemplateRTL__bb8b3042f2122e80_t * m ) {
 
   #if VM_COVERAGE
     VerilatedCov::write( "coverage.dat" );
   #endif
 
-  VCGRATemplateRTL__009dc38f16b51b37 * model = (VCGRATemplateRTL__009dc38f16b51b37 *) m->model;
+  VCGRATemplateRTL__bb8b3042f2122e80 * model = (VCGRATemplateRTL__bb8b3042f2122e80 *) m->model;
 
   // finalize verilator simulation
   model->final();
@@ -189,9 +189,9 @@ void destroy_model( VCGRATemplateRTL__009dc38f16b51b37_t * m ) {
 //------------------------------------------------------------------------
 // Simulate one time-step in the Verilated model.
 
-void eval( VCGRATemplateRTL__009dc38f16b51b37_t * m ) {
+void eval( VCGRATemplateRTL__bb8b3042f2122e80_t * m ) {
 
-  VCGRATemplateRTL__009dc38f16b51b37 * model = (VCGRATemplateRTL__009dc38f16b51b37 *) m->model;
+  VCGRATemplateRTL__bb8b3042f2122e80 * model = (VCGRATemplateRTL__bb8b3042f2122e80 *) m->model;
 
   // evaluate one time step
   model->eval();
@@ -236,9 +236,9 @@ void assert_en( bool en ) {
 // it everywhere.
 
 #if VLINETRACE
-void trace( VCGRATemplateRTL__009dc38f16b51b37_t * m, char* str ) {
+void trace( VCGRATemplateRTL__bb8b3042f2122e80_t * m, char* str ) {
 
-  VCGRATemplateRTL__009dc38f16b51b37 * model = (VCGRATemplateRTL__009dc38f16b51b37 *) m->model;
+  VCGRATemplateRTL__bb8b3042f2122e80 * model = (VCGRATemplateRTL__bb8b3042f2122e80 *) m->model;
 
   const int nchars = 512;
   const int nwords = nchars/4;
@@ -270,7 +270,7 @@ void trace( VCGRATemplateRTL__009dc38f16b51b37_t * m, char* str ) {
   // module, the scope we are trying to set is actually the _wrapped_ module
   // which is called `v`.
 
-  svSetScope( &model->__VlSymsp->__Vscope_CGRATemplateRTL__009dc38f16b51b37__v );
+  svSetScope( &model->__VlSymsp->__Vscope_CGRATemplateRTL__bb8b3042f2122e80__v );
   model->line_trace( words );
 
   // Note that the way the line tracing works, the line tracing function

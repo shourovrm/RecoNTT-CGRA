@@ -1,5 +1,5 @@
 #=========================================================================
-# VCGRATemplateRTL__009dc38f16b51b37_v.py
+# VCGRATemplateRTL__bb8b3042f2122e80_v.py
 #=========================================================================
 """Provide a template of PyMTL wrapper to import verilated models.
 
@@ -32,10 +32,10 @@ from pymtl3.dsl import Component, connect, InPort, OutPort, Wire, M, U, RD, WR
 #     return "0x" + ret
 
 #-------------------------------------------------------------------------
-# CGRATemplateRTL__009dc38f16b51b37
+# CGRATemplateRTL__bb8b3042f2122e80
 #-------------------------------------------------------------------------
 
-class CGRATemplateRTL__009dc38f16b51b37( Component ):
+class CGRATemplateRTL__bb8b3042f2122e80( Component ):
   id_ = 0
 
   def __init__( s, *args, **kwargs ):
@@ -59,11 +59,11 @@ class CGRATemplateRTL__009dc38f16b51b37( Component ):
         // Verilator model
         void * model;
 
-      } VCGRATemplateRTL__009dc38f16b51b37_t;
+      } VCGRATemplateRTL__bb8b3042f2122e80_t;
 
-      VCGRATemplateRTL__009dc38f16b51b37_t * create_model( const char * );
-      void destroy_model( VCGRATemplateRTL__009dc38f16b51b37_t *);
-      void eval( VCGRATemplateRTL__009dc38f16b51b37_t * );
+      VCGRATemplateRTL__bb8b3042f2122e80_t * create_model( const char * );
+      void destroy_model( VCGRATemplateRTL__bb8b3042f2122e80_t *);
+      void eval( VCGRATemplateRTL__bb8b3042f2122e80_t * );
       void assert_en( bool en );
       
 
@@ -71,15 +71,15 @@ class CGRATemplateRTL__009dc38f16b51b37( Component ):
 
     # Print the modification time stamp of the shared lib
     # print 'Modification time of {}: {}'.format(
-    #   'libCGRATemplateRTL__009dc38f16b51b37_v.so', os.path.getmtime( './libCGRATemplateRTL__009dc38f16b51b37_v.so' ) )
+    #   'libCGRATemplateRTL__bb8b3042f2122e80_v.so', os.path.getmtime( './libCGRATemplateRTL__bb8b3042f2122e80_v.so' ) )
 
     # Import the shared library containing the model. We defer
     # construction to the elaborate_logic function to allow the user to
     # set the vcd_file.
-    s._ffi_inst = s.ffi.dlopen('./libCGRATemplateRTL__009dc38f16b51b37_v.so')
+    s._ffi_inst = s.ffi.dlopen('./libCGRATemplateRTL__bb8b3042f2122e80_v.so')
 
     # increment instance count
-    CGRATemplateRTL__009dc38f16b51b37.id_ += 1
+    CGRATemplateRTL__bb8b3042f2122e80.id_ += 1
 
   def finalize( s ):
     """Finalize the imported component.
@@ -121,7 +121,7 @@ class CGRATemplateRTL__009dc38f16b51b37( Component ):
       if True:
         verilator_vcd_file = "test.vcd.vcd"
       else:
-        verilator_vcd_file = "CGRATemplateRTL__009dc38f16b51b37.verilator1.vcd"
+        verilator_vcd_file = "CGRATemplateRTL__bb8b3042f2122e80.verilator1.vcd"
 
     # Convert string to `bytes` which is required by CFFI on python 3
     verilator_vcd_file = verilator_vcd_file.encode('ascii')
