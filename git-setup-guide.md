@@ -1,3 +1,24 @@
+## How to set git for the new install
+
+
+1. Install git
+
+> sudo apt install git
+
+2. Save configs:
+
+> git config --global user.name "John Doe"
+> git config --global user.email johndoe@example.com
+
+3. Set git branch to main:
+
+> git config --global init.defaultBranch main
+
+4. checkout git's config: 
+
+> git config --list
+
+
 ## How to setup git
 
 ### Step 1:
@@ -50,5 +71,4 @@
 5. push it to the github - 
 
 > git push origin main 
-
 
