@@ -25,8 +25,8 @@ from pymtl3.passes.backends.verilog import TranslationImportPass
 
 import os
 
-os.chdir("/home/rms/Practice/CGRA-Flow_test/build")
-
+os.chdir("/home/rms/repos/RecoNTT-CGRA/test_build/results/verilog/")
+os.system("rm -rf /home/rms/repos/RecoNTT-CGRA/test_build/results/verilog/*")
 
 #-------------------------------------------------------------------------
 # Test harness
@@ -72,9 +72,9 @@ class TestHarness( Component ):
     connect( s.src_opt.send,       s.dut.recv_opt           )
     connect( s.dut.send_out[0],    s.sink_out.recv          )
 
-  # def done( s ):
-  #   return s.src_in0.done() and s.src_in1.done() and\
-  #          s.src_opt.done() and s.sink_out.done()
+  def done( s ):
+    return s.src_in0.done() and s.src_in1.done() and\
+           s.src_opt.done() and s.sink_out.done()
 
   def line_trace( s ):
     return s.dut.line_trace()
