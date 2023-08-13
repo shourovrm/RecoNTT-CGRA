@@ -85,41 +85,28 @@ def run_sim( test_harness, max_cycles=100 ):
   test_harness.dut.config_verilog_import = VerilatorImportConfigs(vl_Wno_list=['UNSIGNED', 'UNOPTFLAT', 'WIDTH', 'WIDTHCONCAT', 'ALWCOMBORDER'],
                                                                   vl_trace_filename="test",
                                                                   vl_trace=True)
-    # print("Verilator configuration complete.")
-  # except Exception as e:
-  #   print(f"Error during Verilator configuration: {e}")
 
-  # try:
   test_harness = TranslationImportPass()(test_harness)
-    # print("Translation and import complete.")
-  # except Exception as e:
-  #   print(f"Error during translation and import: {e}")
-  
-  # try:
+
   test_harness.apply( SimulationPass() )
-    # print("Simulation pass applied.")
-  # except Exception as e:
-  #   print(f"Error during simulation pass application: {e}")
-  # try:
+
   test_harness.sim_reset()
-  #   print("Simulation reset complete.")
-  # except Exception as e:
-  #   print(f"Error during simulation reset: {e}")
+
 
   # Run simulation
   ncycles = 0
   print()
-  # print(f"{ncycles}:{test_harness.line_trace()}")
+
   print( "{}:{}".format( ncycles, test_harness.line_trace() ))
   while not test_harness.done() and ncycles < max_cycles:
-    # try:
-    test_harness.tick()
-    ncycles += 1
-    print(f"{ncycles}:{test_harness.line_trace()}")
-    print( "{}:{}".format( ncycles, test_harness.line_trace() ))
-    # except Exception as e:
-    #   print(f"Error during tick {ncycles}: {e}")
-    break
+    try:
+      test_harness.tick()
+      ncycles += 1
+      
+      print( "{}:{}".format( ncycles, test_harness.line_trace() ))
+    except Exception as e:
+      print(f"Error during tick {ncycles}: {e}")
+      break
     
 
   # Check timeout

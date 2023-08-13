@@ -32,6 +32,8 @@ from ..CGRAFL                     import CGRAFL
 from ..CGRARTL                     import CGRARTL
 from ...lib.dfg_helper            import *
 
+from VectorCGRA.cgra.translate.CGRATemplateRTL_test import *
+
 import os
 
 #-------------------------------------------------------------------------
@@ -129,7 +131,7 @@ def test_CGRA_4x4_fir():
   ctrl_mem_size     = II
   data_mem_size     = 100
   num_fu_in         = 4
-  DUT               = CGRACL
+  DUT               = CGRATemplateRTL
   FunctionUnit      = FlexibleFuRTL
   FuList            = [ AdderRTL, PhiRTL, MemUnitRTL, CompRTL, MulRTL, BranchRTL ]
   DataType          = mk_data( 16, 1 )
