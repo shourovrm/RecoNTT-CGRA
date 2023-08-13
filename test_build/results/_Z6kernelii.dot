@@ -1,0 +1,7 @@
+digraph "DFG for'_Z6kernelii' function" {
+	Node0add[shape=record, label="(0) add"];
+	Node1ret[shape=record, label="(1) ret"];
+edge [color=blue]
+edge [color=red]
+	Node0add -> Node1ret
+}
