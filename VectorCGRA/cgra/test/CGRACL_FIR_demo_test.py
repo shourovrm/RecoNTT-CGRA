@@ -29,7 +29,6 @@ from ...fu.single.MemUnitRTL      import MemUnitRTL
 from ..CGRACL                     import CGRACL
 
 from ..CGRAFL                     import CGRAFL
-from ..CGRARTL                     import CGRARTL
 from ...lib.dfg_helper            import *
 
 import os
@@ -95,13 +94,12 @@ def run_CGRAFL():
   file_path   = os.path.join( script_dir, target_json )
   DataType    = mk_data( 16, 1 )
   CtrlType    = mk_ctrl()
-  const_data  = [ DataType( 0, 1  ),
-                  DataType( 1, 1  ),
-                  DataType( 2, 1  ),
-                  DataType( 3, 1  ),
-                  DataType( 4, 1  ),
-                  DataType( 5, 1 ) ]
-  print("Here is my const data",const_data)
+  const_data  = [ DataType( 0  ),
+                  DataType( 1  ),
+                  DataType( 2  ),
+                  DataType( 3  ),
+                  DataType( 4  ),
+                  DataType( 5 ) ]
   data_spm    = [ 5 for _ in range(100) ]
   fu_dfg      = DFG( file_path, const_data, data_spm )
 
@@ -145,7 +143,7 @@ def test_CGRA_4x4_fir():
 
 #  print(src_opt)
 
-  preload_data      = [ DataType( 8, 2 ) ] * data_mem_size
+  preload_data      = [ DataType( 5, 1 ) ] * data_mem_size
   preload_const     = []
   for _ in range( num_tiles ):
     preload_const.append([])
