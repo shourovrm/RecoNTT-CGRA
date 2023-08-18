@@ -14,6 +14,7 @@ from functools import partial
 
 from VectorCGRA.cgra.translate.CGRATemplateRTL_test import *
 
+
 PORT_NORTH     = 0
 PORT_SOUTH     = 1
 PORT_WEST      = 2
