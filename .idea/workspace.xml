@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3dc5f8d4-750d-4d0d-998b-c38276e1c8f7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/test_build/codes/cgra_flow_adder.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_build/codes/cgra_flow_adder.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/_Z6kernelPiS_S_i.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_build/results/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/dfg.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_build/results/dfg.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/kernel.bc" beforeDir="false" afterPath="$PROJECT_DIR$/test_build/results/kernel.bc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/kernel.ll" beforeDir="false" afterPath="$PROJECT_DIR$/test_build/results/kernel.ll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/kernel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/param.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/CGRAKingMeshRTL__99cbcfeeb0999932.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/CGRAKingMeshRTL__99cbcfeeb0999932_v.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/CGRAKingMeshRTL__99cbcfeeb0999932_v.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/design_sv2v.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/libCGRAKingMeshRTL__99cbcfeeb0999932_v.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__1__Slow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__2__Slow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__3.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__3__Slow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__Slow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__Syms.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__Syms.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__Trace.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__Trace__Slow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932___024unit.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932___024unit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932___024unit__Slow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__ver.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932__verFiles.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/obj_dir_CGRAKingMeshRTL__99cbcfeeb0999932/VCGRAKingMeshRTL__99cbcfeeb0999932_classes.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/pymtl_import_config_CGRAKingMeshRTL__99cbcfeeb0999932.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_build/results/verilog/test.vcd" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2UAgbPlaTXtvMbBakGp2srJjGcG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rms/mambaforge/bin/conda&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3dc5f8d4-750d-4d0d-998b-c38276e1c8f7" name="Changes" comment="" />
+      <created>1692387872001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692387872001</updated>
+      <workItem from="1692387873075" duration="342000" />
+      <workItem from="1692388685775" duration="496000" />
+      <workItem from="1692389546813" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
