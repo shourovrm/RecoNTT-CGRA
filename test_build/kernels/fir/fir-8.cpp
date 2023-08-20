@@ -4,7 +4,7 @@
 
 float input[NTAPS];
 float output[NTAPS];
-float coefficients[NTAPS] = {15.0, 30.0, 45.0, -30.0, 60.0, 75.0, -45.0, 90.0};
+float coefficients[NTAPS] = {150.0, 300.0, 450.0, -300.0, 600.0, 750.0, -450.0, 900.0};
 
 void kernel(float input[], float output[], float coefficient[]);
 

@@ -5,7 +5,7 @@ target triple = "x86_64-pc-linux-gnu"
 
 @input = dso_local local_unnamed_addr global [8 x float] zeroinitializer, align 16
 @output = dso_local local_unnamed_addr global [8 x float] zeroinitializer, align 16
-@coefficients = dso_local local_unnamed_addr global [8 x float] [float 1.500000e+01, float 3.000000e+01, float 4.500000e+01, float -3.000000e+01, float 6.000000e+01, float 7.500000e+01, float -4.500000e+01, float 9.000000e+01], align 16
+@coefficients = dso_local local_unnamed_addr global [8 x float] [float 1.500000e+02, float 3.000000e+02, float 4.500000e+02, float -3.000000e+02, float 6.000000e+02, float 7.500000e+02, float -4.500000e+02, float 9.000000e+02], align 16
 @.str = private unnamed_addr constant [5 x i8] c"%f  \00", align 1
 
 ; Function Attrs: nofree norecurse nounwind uwtable mustprogress
