@@ -13,7 +13,7 @@ int main()
 
 //  input_dsp (input, NTAPS, 0);
   for (int i = 0; i < NTAPS; i++) {
-      input[i] = i + 1;
+      input[i] = i + 586;
   }
 
   kernel(input, output, coefficients);

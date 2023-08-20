@@ -13,54 +13,53 @@ define dso_local i32 @main() local_unnamed_addr #0 {
   br label %1
 
 1:                                                ; preds = %1, %0
-  %2 = phi i64 [ 0, %0 ], [ %9, %1 ]
-  %3 = phi <4 x i64> [ <i64 0, i64 1, i64 2, i64 3>, %0 ], [ %10, %1 ]
-  %4 = trunc <4 x i64> %3 to <4 x i32>
-  %5 = add <4 x i32> %4, <i32 1, i32 1, i32 1, i32 1>
-  %6 = sitofp <4 x i32> %5 to <4 x float>
-  %7 = getelementptr inbounds [8 x float], [8 x float]* @input, i64 0, i64 %2
-  %8 = bitcast float* %7 to <4 x float>*
-  store <4 x float> %6, <4 x float>* %8, align 16, !tbaa !2
-  %9 = add i64 %2, 4
-  %10 = add <4 x i64> %3, <i64 4, i64 4, i64 4, i64 4>
-  %11 = icmp eq i64 %9, 8
-  br i1 %11, label %12, label %1, !llvm.loop !6
+  %2 = phi i64 [ 0, %0 ], [ %8, %1 ]
+  %3 = phi <4 x i32> [ <i32 0, i32 1, i32 2, i32 3>, %0 ], [ %9, %1 ]
+  %4 = add <4 x i32> %3, <i32 586, i32 586, i32 586, i32 586>
+  %5 = sitofp <4 x i32> %4 to <4 x float>
+  %6 = getelementptr inbounds [8 x float], [8 x float]* @input, i64 0, i64 %2
+  %7 = bitcast float* %6 to <4 x float>*
+  store <4 x float> %5, <4 x float>* %7, align 16, !tbaa !2
+  %8 = add i64 %2, 4
+  %9 = add <4 x i32> %3, <i32 4, i32 4, i32 4, i32 4>
+  %10 = icmp eq i64 %8, 8
+  br i1 %10, label %11, label %1, !llvm.loop !6
 
-12:                                               ; preds = %1
-  %13 = load float, float* getelementptr inbounds ([8 x float], [8 x float]* @output, i64 0, i64 0), align 16, !tbaa !2
-  br label %14
+11:                                               ; preds = %1
+  %12 = load float, float* getelementptr inbounds ([8 x float], [8 x float]* @output, i64 0, i64 0), align 16, !tbaa !2
+  br label %13
 
-14:                                               ; preds = %14, %12
-  %15 = phi float [ %13, %12 ], [ %22, %14 ]
-  %16 = phi i64 [ 0, %12 ], [ %23, %14 ]
-  %17 = getelementptr inbounds [8 x float], [8 x float]* @input, i64 0, i64 %16
-  %18 = load float, float* %17, align 4, !tbaa !2
-  %19 = getelementptr inbounds [8 x float], [8 x float]* @coefficients, i64 0, i64 %16
-  %20 = load float, float* %19, align 4, !tbaa !2
-  %21 = fmul float %18, %20
-  %22 = fadd float %15, %21
-  %23 = add nuw nsw i64 %16, 1
-  %24 = icmp eq i64 %23, 8
-  br i1 %24, label %25, label %14, !llvm.loop !10
+13:                                               ; preds = %13, %11
+  %14 = phi float [ %12, %11 ], [ %21, %13 ]
+  %15 = phi i64 [ 0, %11 ], [ %22, %13 ]
+  %16 = getelementptr inbounds [8 x float], [8 x float]* @input, i64 0, i64 %15
+  %17 = load float, float* %16, align 4, !tbaa !2
+  %18 = getelementptr inbounds [8 x float], [8 x float]* @coefficients, i64 0, i64 %15
+  %19 = load float, float* %18, align 4, !tbaa !2
+  %20 = fmul float %17, %19
+  %21 = fadd float %14, %20
+  %22 = add nuw nsw i64 %15, 1
+  %23 = icmp eq i64 %22, 8
+  br i1 %23, label %24, label %13, !llvm.loop !10
 
-25:                                               ; preds = %14
-  store float %22, float* getelementptr inbounds ([8 x float], [8 x float]* @output, i64 0, i64 0), align 16, !tbaa !2
-  %26 = fpext float %22 to double
-  %27 = tail call i32 (i8*, ...) @printf(i8* nonnull dereferenceable(1) getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0), double %26)
-  br label %29
+24:                                               ; preds = %13
+  store float %21, float* getelementptr inbounds ([8 x float], [8 x float]* @output, i64 0, i64 0), align 16, !tbaa !2
+  %25 = fpext float %21 to double
+  %26 = tail call i32 (i8*, ...) @printf(i8* nonnull dereferenceable(1) getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0), double %25)
+  br label %28
 
-28:                                               ; preds = %29
+27:                                               ; preds = %28
   ret i32 0
 
-29:                                               ; preds = %25, %29
-  %30 = phi i64 [ 1, %25 ], [ %35, %29 ]
-  %31 = getelementptr inbounds [8 x float], [8 x float]* @output, i64 0, i64 %30
-  %32 = load float, float* %31, align 4, !tbaa !2
-  %33 = fpext float %32 to double
-  %34 = tail call i32 (i8*, ...) @printf(i8* nonnull dereferenceable(1) getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0), double %33)
-  %35 = add nuw nsw i64 %30, 1
-  %36 = icmp eq i64 %35, 8
-  br i1 %36, label %28, label %29, !llvm.loop !11
+28:                                               ; preds = %24, %28
+  %29 = phi i64 [ 1, %24 ], [ %34, %28 ]
+  %30 = getelementptr inbounds [8 x float], [8 x float]* @output, i64 0, i64 %29
+  %31 = load float, float* %30, align 4, !tbaa !2
+  %32 = fpext float %31 to double
+  %33 = tail call i32 (i8*, ...) @printf(i8* nonnull dereferenceable(1) getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0), double %32)
+  %34 = add nuw nsw i64 %29, 1
+  %35 = icmp eq i64 %34, 8
+  br i1 %35, label %27, label %28, !llvm.loop !11
 }
 
 ; Function Attrs: nofree norecurse nounwind uwtable mustprogress
